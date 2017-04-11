@@ -1,8 +1,8 @@
 # ExecOSCommand
 
-## 使用说明
+## 说明 / Instructions
 
-### 简单命令
+### 普通命令 / Ordinary command
 
 ```java
 
@@ -14,7 +14,7 @@
 		
 ```
 
-### 管道命令
+### 管道命令 / Pipe command
 
 ```java
 
@@ -26,4 +26,11 @@
 		System.out.println(sb);
 		
 ```
+
+
+## 开源协议 / License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2017 Spencer Chang
 
