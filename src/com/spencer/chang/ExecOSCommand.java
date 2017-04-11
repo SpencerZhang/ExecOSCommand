@@ -29,17 +29,4 @@ public class ExecOSCommand {
 		}
 		return result;
 	}
-
-	public static void main(String[] args) {
-		ArrayList<String> cmds = new ArrayList<String>();
-//		cmds.add("df");
-//		cmds.add("-m");
-		
-		cmds.add("/bin/sh");
-		cmds.add("-c");
-		cmds.add("ps -ef|grep java");
-		StringBuilder sb = ExecOSCommand.getCommandResult(cmds);
-		System.out.println(sb);
-	}
-
 }
