@@ -22,6 +22,10 @@ public class ExecOSCommand {
 			while ((line = read.readLine()) != null) {
 				result.append(line).append("\n");
 			}
+			
+			in.close();
+			read.close();
+			pro.destroy();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (InterruptedException e) {
