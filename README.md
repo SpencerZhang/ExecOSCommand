@@ -32,5 +32,5 @@
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2017 Spencer Chang
+Copyright (c) 2017 Spencer Chang. All rights reserved.
 
