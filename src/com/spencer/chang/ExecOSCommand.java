@@ -1,35 +1,26 @@
 package com.spencer.chang;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-
 public class ExecOSCommand {
-	private static StringBuilder result;
+	public StringBuffer getCommandResult(ProcessWarpper command, ProcessManger pm) {
+		StringBuffer result = new StringBuffer();
+		OS OSTypes = command.getOSType();
+		if (OSTypes instanceof OS) {
+			// 组装Process
+			ParameterProcess pp = new ParameterProcess();
+			Process pro = pp.parameterProcess(OSTypes, command, pm);
 
-	public static StringBuilder getCommandResult(ArrayList<String> cmds) {
-		result = new StringBuilder();
-		Process pro;
-		ProcessBuilder pb = new ProcessBuilder(cmds);
-		try {
-			pro = pb.start();
-			pro.waitFor();
-			InputStream in = pro.getInputStream();
-			BufferedReader read = new BufferedReader(new InputStreamReader(in));
-			String line = null;
-			while ((line = read.readLine()) != null) {
-				result.append(line).append("\n");
+			try {
+				pro.waitFor();
+			} catch (InterruptedException e1) {
+				e1.printStackTrace();
 			}
-			
-			in.close();
-			read.close();
-			pro.destroy();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+			// 查询Process状态
+			Status status = pm.getStatus(pro);
+			// 处理Process返回结果
+			ResultProcess rp = new ResultProcess();
+			result = rp.ResultProcessText(status, pro);
+		} else {
+			result.append("不能识别的系统！").append("\n");
 		}
 		return result;
 	}
