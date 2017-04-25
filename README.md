@@ -26,6 +26,14 @@
 		
 ```
 
+## 捐助
+<!--https://raw.githubusercontent.com/SpencerZhang/ExecOSCommand-->
+<p align="center">
+<img src="./resource/IMG_0783.JPG" alt="WeChat" title="WeChat" width="200"/>
+</p>
+<p align="center">
+<img src="./resource/IMG_0784.JPG" alt="AliPay" title="AliPay" width="200"/>
+</p>
 
 
 ## 开源协议 / License
