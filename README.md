@@ -1,5 +1,10 @@
 # ExecOSCommand
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SpencerZhang/ExecOSCommand/LICENSE.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/SpencerZhang/ExecOSCommand/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/SpencerZhang/ExecOSCommand.svg?style=social&label=Stars)](https://github.com/SpencerZhang/ExecOSCommand)
+[![GitHub forks](https://img.shields.io/github/forks/SpencerZhang/ExecOSCommand.svg?style=social&label=Fork)](https://github.com/SpencerZhang/ExecOSCommand)
+
 ## 说明 / Instructions
 
 ### 命令 / command
