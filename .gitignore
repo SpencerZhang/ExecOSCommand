@@ -1,5 +1,22 @@
+#Mac
+
 .DS_Store
+
+#Eclipse
+
 .classpath
 .project
-.settings
-bin
+.settings/
+bin/
+
+#Intellij
+
+*.iml
+*.ipr
+*.iws
+*.uml
+.idea/
+
+#JVM crash log
+
+hs_err_pid*.log

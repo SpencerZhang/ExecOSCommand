@@ -1,5 +1,6 @@
 # ExecOSCommand
 
+[![Build Status](https://travis-ci.org/SpencerZhang/ExecOSCommand.svg?branch=master)](https://travis-ci.org/SpencerZhang/ExecOSCommand)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SpencerZhang/ExecOSCommand/LICENSE.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/SpencerZhang/ExecOSCommand/pulls)
 [![GitHub stars](https://img.shields.io/github/stars/SpencerZhang/ExecOSCommand.svg?style=social&label=Stars)](https://github.com/SpencerZhang/ExecOSCommand)
